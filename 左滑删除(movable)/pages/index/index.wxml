@@ -1,0 +1,32 @@
+<view class="container">
+  <movable-area class="area">
+    <movable-view direction="all" out-of-bounds x="30" y="30" class="box">
+      box
+    </movable-view>
+    <movable-view direction="horizontal" class="box">
+      horizontal
+    </movable-view>
+  </movable-area>
+  <block>
+    <view>消息列表--左滑删除</view>
+      <movable-area wx:for="{{messages}}" wx:key="this" class="list-area">
+        <movable-view
+          class="list-item"
+          direction="horizontal"
+          out-of-bounds
+          damping="50"
+          x="{{item.x}}"
+          data-id="{{index}}"
+          bindtouchstart="handleTouchStart"
+          bindtouchend="handleTouchEnd"
+        >
+          <image src="{{item.avatar}}" mode="" />
+          <view class="content">
+            <view class="nickname">{{item.nickname}}</view>
+            <view class="msg">{{item.msg}}</view>
+          </view>
+        </movable-view>
+        <view class="button-del">删除</view>
+      </movable-area>
+  </block>
+</view>

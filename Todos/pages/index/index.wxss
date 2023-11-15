@@ -1,0 +1,8 @@
+
+
+input {
+  border-bottom: 1rpx solid #ddd;
+  padding: 20rpx;
+  margin: 20rpx;
+  height: 60rpx;
+}

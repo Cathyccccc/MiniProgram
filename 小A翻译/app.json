@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/change/change"
+  ],
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "color": "#bfbfbf",
+    "selectedColor": "#1890FF",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "翻译",
+      "iconPath": "./images/icon-1.png",
+      "selectedIconPath": "./images/sel-icon-1.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath": "./images/icon-2.png",
+      "selectedIconPath": "./images/sel-icon-2.png"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小A翻译",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

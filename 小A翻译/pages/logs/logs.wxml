@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <view class="bar">
+    日志记录
+    <icon class="iconfont icon-15qingkong-1" bindtap="clearHistory" />
+  </view>
+  <block wx:for="{{history}}" wx:key="index" wx:for-item="item" class="history">
+    <view class="history-item">
+      <text class="log-item">{{item.input}}</text>
+      <text class="translation">{{item.translation}}</text>
+    </view>
+  </block>
+
+</view>

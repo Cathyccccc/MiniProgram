@@ -1,0 +1,22 @@
+.todoItem {
+  margin: 20rpx;
+  padding: 25rpx;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+.checkBox {
+ margin-right: 10rpx;
+}
+
+.checkTitle {
+}
+
+.checkTitle.finish {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.clear {
+}
+

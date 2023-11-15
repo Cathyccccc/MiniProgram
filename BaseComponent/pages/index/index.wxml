@@ -1,0 +1,93 @@
+<view class="container">
+  <block>
+    <view class="title">1.view</view>
+  </block>
+  <block>
+    <view class="title">2.scroll-view</view>
+    <view>scroll-y</view>
+    <scroll-view scroll-y class="scroll-view1">
+      <view wx:for="{{lists}}" wx:key="this">{{item}}</view>
+    </scroll-view>
+    <view>scroll-x</view>
+    <scroll-view scroll-x="true" enable-flex class="scroll-view2" style="flex-direction: row;">
+      <view class="imgContainer">
+        <image wx:for="{{imgs}}" wx:key="this" src="{{item}}" mode="aspectFill" />
+      </view>
+    </scroll-view>
+  </block>
+  <block>
+    <view class="title">3.text</view>
+    <text style="color: red">第一个text</text>
+    <text>第二个text</text>
+  </block>
+  <block>
+    <view class="title">4.image</view>
+    <view class="imageMode">
+      <view class="mode-title">默认scaleToFill(不维持比例缩放)</view>
+      <image src="../../images/风景1.jpeg" />
+    </view>
+    <view class="imageMode">
+      <view class="mode-title">aspectFit(维持比例缩放，长边展示全，高度被裁)</view>
+      <image src="../../images/风景1.jpeg" mode="aspectFit" />
+    </view>
+    <view class="imageMode">
+      <view class="mode-title">aspectFill(维持比例缩放，短边展示全，宽度被裁)</view>
+      <image src="../../images/风景1.jpeg" mode="aspectFill" />
+    </view>
+    <view class="imageMode">
+      <view class="mode-title">widthFix(维持比例缩放，宽度不变，高度变化，展示整个图)</view>
+      <image src="../../images/风景1.jpeg" mode="widthFix" />
+    </view>
+    <view class="imageMode">
+      <view class="mode-title">heightFix(维持比例缩放，高度不变，宽度变化，展示整个图)</view>
+      <image src="../../images/风景1.jpeg" mode="heightFix" />
+    </view>
+  </block>
+  <block>
+    <view class="title">5.button</view>
+    <button type="primary">primary</button>
+    <button type="default">default</button>
+    <button type="warn">warn</button>
+    <button size="mini" type="primary">mini</button>
+    <button plain>plain</button>
+    <button disabled type="primary">disabled</button>
+    <button loading type="primary">loading</button>
+  </block>
+  <block>
+    <view class="title">6.navigator</view>
+    <navigator url="../item/item">
+      <button type="default">跳转到item页面</button>
+    </navigator>
+  </block>
+  <block>
+    <view class="title">7.icon</view>
+    <icon type="success"/>
+    <icon type="success_no_circle"/>
+    <icon type="info"/>
+    <icon type="warn"/>
+    <icon type="waiting"/>
+    <icon type="cancel"/>
+    <icon type="download"/>
+    <icon type="search"/>
+    <icon type="clear"/>
+    <icon type="clear" size="30rpx"/>
+    <icon type="clear" color="red"/>
+  </block>
+  <block>
+    <view class="title">8.progress</view>
+    <view style="margin: 30rpx 0;">
+    <!-- progress设置margin-bottom不起作用,得设置padding -->
+      <progress percent="30"/>
+      <view>margin-bottom没起作用</view>
+      <progress class="progress" percent="40" show-info/>
+      <progress percent="50" border-radius="5" style="padding: 10rpx;"/>
+      <progress percent="60" stroke-width="10" class="progress"/>
+      <progress percent="70" active class="progress"/>
+    </view>
+  </block>
+  <block>
+    <view class="title">9.rich-text</view>
+    <!-- 可在wxss中使用html中的class类名添加样式 -->
+    <rich-text nodes="{{htmlStr}}"/>
+  </block>
+</view>

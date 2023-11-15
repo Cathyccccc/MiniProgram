@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="select" bindtap="bindchange">
+    <text>请选择翻译语言</text>
+    <icon class="iconfont icon-xiala"/>
+    <text>{{languages[index].lang}}</text>
+    <!-- <picker mode="selector" range="{{languages}}" range-key="lang" bindchange="bindchange">
+      <view>
+        <text>请选择翻译语言</text>
+        <icon wx:if="{{!hasLanguage}}" class="iconfont icon-xiala" />
+        <block wx:else="{{hasLanguage}}">
+          <icon class="iconfont icon-arrow-right-filling" />
+          <text>{{languages[index].lang}}</text>
+        </block>
+      </view>
+    </picker> -->
+  </view>
+  <view class="content">
+    <view class="item input-box">
+      <textarea placeholder="请输入文字..." model:value="{{value}}" bindinput="bindinput" />
+      <button size="mini" bindtap="handleClear">清空</button>
+    </view>
+    <view class="divider"></view>
+    <view class="item">{{translation}}</view>
+  </view>
+</view>

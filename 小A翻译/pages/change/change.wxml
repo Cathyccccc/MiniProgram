@@ -1,0 +1,9 @@
+<!--pages/change/change.wxml-->
+<view class="container">
+  <scroll-view scroll-y class="scroll-list">
+    <view wx:for="{{languages}}" wx:key="index" class="list-item" data-index="{{index}}" bindtap="handleSelect">
+      <text>{{item.lang}}</text>
+      <icon wx:if="{{index === selectIndex}}" class="iconfont icon-xuanze"/>
+    </view>
+  </scroll-view>
+</view>

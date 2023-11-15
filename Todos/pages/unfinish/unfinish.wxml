@@ -1,0 +1,10 @@
+<view>
+  <view class="title">共{{0}}项任务</view>
+  <todoItem
+    wx:for="{{unfinishList}}"
+    wx:key="this"
+    item="{{item}}"
+    bind:fresh="fresh"
+    bind:fresh="fresh"
+  />
+</view>

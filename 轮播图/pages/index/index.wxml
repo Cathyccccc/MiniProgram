@@ -1,0 +1,21 @@
+<view class="container">
+  <view>使用swiper和swiper-item组件制作轮播图</view>
+  <swiper indicator-dots indicator-color="#eee" autoplay>
+    <swiper-item wx:for="{{imgs}}" wx:key="this">
+      <image src="{{item}}" mode="aspectFill"/>
+    </swiper-item>
+  </swiper>
+  <swiper
+    class="swiper"
+    circular
+    easeInOutCubic
+    previous-margin="100rpx"
+    next-margin="100rpx"
+    current="{{current}}"
+    bindchange="handleChange"
+  >
+    <swiper-item wx:for="{{imgs2}}" wx:key="this" class="swiper-item {{current === index ? 'active' : ''}}">
+      <image src="{{item}}" mode="aspectFill"/>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,9 @@
+/**app.wxss**/
+/* 注意：1.引入下载好的图标字体包文件时，后缀要修改为wxss。
+        2.需要 将字体包上传到服务器，然后在wxss文件中修改src地址为服务器中字体包地址*/
+@import './styles/iconfont.wxss';
+
+.container {
+  height: 100vh;
+  box-sizing: border-box;
+} 

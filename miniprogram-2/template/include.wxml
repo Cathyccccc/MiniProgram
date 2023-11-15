@@ -1,0 +1,4 @@
+<view>
+  <text style="font-weight: 600;color: aqua;">include单纯引入。</text>
+  <text>《== 内联样式</text>
+</view>

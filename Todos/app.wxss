@@ -1,0 +1,10 @@
+/**app.wxss**/
+.container {
+  height: 100vh;
+  color: #666;
+} 
+.title {
+  color: #1890FF;
+  font-size: 30rpx;
+  margin: 40rpx;
+}

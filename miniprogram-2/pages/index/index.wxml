@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<import src="../../template/temp/temp" /> <!-- 引入template -->
+<view class="container">
+  <view>
+    <text>My name is {{userInfo.name}}</text>
+  </view>
+  <view>
+    Now time is {{time}}
+  </view>
+  <view>查看undefined是否显示：{{undefined}}</view>
+  <view>查看null是否显示：{{null}}</view>
+  <view>Mustache语法支持表达式：{{1 > 0 ? '1 > 0' : '1 < 0'}}</view>
+  <view>条件语句：wx:if,wx:elif,wx:else</view>
+  <block wx:if="{{num === 0}}">
+    <view>num等于0</view>
+  </block>
+  <block wx:elif="{{num > 0}}">
+    <view>num大于0</view>
+  </block>
+  <block wx:else="{{num < 0}}">
+    <view>num小于0</view>
+  </block>
+  <block>
+    列表渲染: wx:for
+    <view wx:for="{{fruits}}" wx:key="index">
+      <text style="color: {{color}}">{{index + 1}}.{{item}}</text>
+    </view>
+    <text>《== 动态引入行内样式</text>
+  </block>
+  <block>
+    模板引入：template:is
+    <template is="tempTest" data="{{msg: '你好!'}}"/>
+    <include src="../../template/include.wxml"/>
+  </block>
+  <block>
+    <view>使用外部样式@import:</view>
+    <text class="red">红色</text>
+    <text class="blue">蓝色</text>
+    <text class="green">绿色</text>
+  </block>
+</view>

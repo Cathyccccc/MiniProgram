@@ -1,0 +1,8 @@
+<import src="./temp" />
+<template name="tempTest">
+  <view>这是一个模板</view>
+  <view>
+    从引入文件传过来的data：
+    {{msg}}
+  </view>
+</template>

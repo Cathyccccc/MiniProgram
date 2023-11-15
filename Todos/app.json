@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/finish/finish",
+    "pages/unfinish/unfinish"
+  ],
+  "tabBar": {
+    "selectedColor": "#1890FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "任务清单",
+        "iconPath": "/images/todoUnsel.png",
+        "selectedIconPath": "/images/todoSel.png"
+      },
+      {
+        "pagePath": "pages/unfinish/unfinish",
+        "text": "未完成",
+        "iconPath": "/images/unfinishUnsel.png",
+        "selectedIconPath": "/images/unfinishSel.png"
+      },
+      {
+        "pagePath": "pages/finish/finish",
+        "text": "已完成",
+        "iconPath": "/images/finishUnsel.png",
+        "selectedIconPath": "/images/finishSel.png"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Todos",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,17 @@
+.bar {
+  height: 80rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  line-height: 80rpx;
+  padding: 10rpx;
+}
+.history-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+}
+.translation {
+  color: #ddd;
+  font-size: 14px;
+}

@@ -1,0 +1,18 @@
+.swiper {
+  height: 780rpx;
+}
+.swiper .swiper-item {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+}
+
+.swiper-item image {
+  height: 100%;
+  width: 100%;
+  border-radius: 20rpx;
+  transition: all .5s;
+}
+.swiper-item:not(.active) image {
+  transform: scale(0.88);
+}

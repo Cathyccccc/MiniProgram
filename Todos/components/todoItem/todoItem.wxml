@@ -1,0 +1,7 @@
+<view class="todoItem">
+  <view bindtap="handleClick">
+    <checkbox checked="{{item.completed}}" class="checkBox" />
+    <text class="checkTitle {{item.completed ? 'finish' : ''}}">{{item.content}}</text>
+  </view>
+  <icon type="clear" size="16" class="clear" bindtap="handleDelete" />
+</view>
